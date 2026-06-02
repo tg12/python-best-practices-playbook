@@ -1,37 +1,37 @@
 # Python Best Practices Playbook
 
-`Python Best Practices Playbook` is a research-backed starter repository and LLM skill for building and reviewing modern Python repositories.
+`Python Best Practices Playbook` is a maintained starter repository and LLM skill for building and reviewing modern Python repositories.
 
 Brand: `tg12`
 Site: <https://labs.jamessawyer.co.uk/>
 
-This repository was built by reviewing a small set of high-signal Python template and guidance sources:
-
-- PyPA `sampleproject`
-- `scientific-python/cookie`
-- `cookiecutter-hypermodern-python`
-- Python Packaging User Guide
-- GitHub Actions Python build-and-test docs
+This repository now carries a 57-repository survey across Python frameworks, libraries, tooling, data platforms, scientific stacks, and application projects. The guide and skill reflect the overlap that survives across that wider corpus.
 
 ## What this repo gives you
 
 - A minimal Python package with `src/` layout
 - `pyproject.toml` as the single project metadata and tool config hub
 - GitHub Actions CI for lint, type checks, and tests
-- A documented shortlist of common patterns shared across respected Python repos
+- A documented baseline derived from a 57-repository survey
 - A Codex-compatible skill that can audit or scaffold Python repos using those patterns
 - A rewritten response-style prompt with obvious AI filler removed
 
-## Common themes found across the source set
+## Aggregate findings
 
-1. Project metadata belongs in `pyproject.toml`.
-2. Published packages usually use `src/` layout and a separate `tests/` directory.
-3. CI is standard, usually via GitHub Actions and `actions/setup-python`.
-4. Quality gates are automated: linting, formatting, typing, and tests.
-5. Documentation is part of the repo, not an afterthought.
-6. Release hygiene is automated where possible.
+Across the current survey:
 
-The exact toolchain differs. The stable pattern is not a specific brand of tool. The stable pattern is centralized config, repeatable checks, and tight feedback loops.
+- `53/57` use `pyproject.toml`
+- `57/57` expose GitHub Actions workflows
+- `44/57` use `pre-commit`
+- `42/57` are `pyproject`-only at the repo root, without `setup.py` or `setup.cfg`
+- `40/57` expose a dedicated `tests/` or `testing/` directory
+- `42/57` have a root `docs/` directory
+- `40/57` configure Ruff
+- `36/57` configure mypy
+- `41/57` configure pytest in `pyproject.toml`
+- `23/57` use `src/` layout
+
+The stable pattern is not one fixed template. The stable pattern is centralized metadata, machine-enforced checks, and explicit maintenance surfaces.
 
 ## Repository layout
 
@@ -48,13 +48,13 @@ The exact toolchain differs. The stable pattern is not a specific brand of tool.
 
 ## Skill
 
-The skill lives in [skills/python-best-practices-reviewer/SKILL.md](skills/python-best-practices-reviewer/SKILL.md). It is designed for Codex-style skill loading and tells the model when to inspect repo structure, when to prefer small changes, and when to enforce the common Python repo patterns found in the source set.
+The skill lives in [skills/python-best-practices-reviewer/SKILL.md](skills/python-best-practices-reviewer/SKILL.md). It is designed for Codex-style skill loading and tells the model when to inspect repo structure, when to prefer small changes, and when to enforce the common Python repo patterns that hold up across the survey.
 
 ## Research notes
 
 - [docs/common-themes.md](docs/common-themes.md)
 - [docs/repo-blueprint.md](docs/repo-blueprint.md)
-- [research/sources.md](research/sources.md)
+- [research/repo-survey.md](research/repo-survey.md)
 
 ## Quick start
 

@@ -4,7 +4,7 @@ __all__ = ["get_common_themes"]
 
 
 def get_common_themes() -> list[str]:
-    """Return the core themes repeated across the reviewed source repos."""
+    """Return the core themes repeated across the surveyed repositories."""
     return [
         "Centralize metadata and tool configuration in pyproject.toml.",
         "Use src layout for distributable packages.",

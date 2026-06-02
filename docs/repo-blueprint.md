@@ -19,9 +19,9 @@ project-root/
 ## Why this blueprint
 
 - Small enough to understand in one sitting
-- Compatible with PyPA packaging guidance
-- Compatible with GitHub Actions Python CI guidance
-- Close to the overlap among `sampleproject`, `scientific-python/cookie`, and Hypermodern Python
+- Matches the dominant overlap in the 57-repository survey
+- Preserves the control-plane pattern now common in modern Python repos
+- Leaves room for heavier release, docs, and security layers when the project earns them
 
 ## What to add only when justified
 
