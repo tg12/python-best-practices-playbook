@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Repo Reviewer"
+  short_description: "Scaffold or audit a Python repository against modern common patterns"
+  default_prompt: "Use $python-best-practices-reviewer to scaffold, review, or tighten this Python repository using a research-backed baseline."
