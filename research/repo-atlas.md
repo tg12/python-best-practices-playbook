@@ -1,0 +1,170 @@
+# Python Repo Atlas
+
+Review date: 2026-06-02
+
+Unique repositories reviewed: `156`
+
+Structural baseline: `138` repositories
+
+Appendix-only references: `18` repositories
+
+Duplicate aliases removed: `1` (`tiangolo/fastapi` resolved to `fastapi/fastapi`)
+
+## Entries
+
+- `public-apis/public-apis` [appendix] - A collective list of free APIs; gha.
+- `EbookFoundation/free-programming-books` [appendix] - :books: Freely available programming books; docs, gha.
+- `donnemartin/system-design-primer` [appendix] - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.; no strong root-level packaging or quality markers.
+- `vinta/awesome-python` [appendix] - An opinionated list of Python frameworks, libraries, tools, and resources; pyproject, gha, ruff, pytest.
+- `TheAlgorithms/Python` [baseline] - All Algorithms implemented in Python; pyproject, docs, gha, pre-commit, ruff, mypy, pytest.
+- `Significant-Gravitas/AutoGPT` [baseline] - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.; docs, gha, pre-commit.
+- `NousResearch/hermes-agent` [baseline] - The agent that grows with you; pyproject, setup.py, tests, docs, gha, ruff, pytest, backend=setuptools.build_meta.
+- `yt-dlp/yt-dlp` [baseline] - A feature-rich command-line audio/video downloader; pyproject, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `AUTOMATIC1111/stable-diffusion-webui` [baseline] - Stable Diffusion web UI; pyproject, requirements, gha, ruff, pytest.
+- `huggingface/transformers` [baseline] - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference...; pyproject, setup.py, src, tests, docs, gha, ruff, pytest.
+- `521xueweihan/HelloGitHub` [appendix] - :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.; no strong root-level packaging or quality markers.
+- `langflow-ai/langflow` [baseline] - Langflow is a powerful tool for building and deploying AI-powered agents and workflows.; pyproject, src, docs, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `anthropics/skills` [appendix] - Public repository for Agent Skills; no strong root-level packaging or quality markers.
+- `ytdl-org/youtube-dl` [baseline] - Command-line program to download videos from YouTube.com and other video sites; setup.cfg, setup.py, docs, gha, tox.
+- `microsoft/markitdown` [baseline] - Python tool for converting files and office documents to Markdown.; gha, pre-commit.
+- `open-webui/open-webui` [baseline] - User-friendly AI Interface (Supports Ollama, OpenAI API, ...); pyproject, src, docs, gha, pre-commit, ruff, backend=hatchling.build.
+- `langchain-ai/langchain` [baseline] - The agent engineering platform.; gha, pre-commit.
+- `anthropics/claude-code` [baseline] - Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explainin...; gha.
+- `Comfy-Org/ComfyUI` [baseline] - The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.; pyproject, requirements, tests, gha, ruff.
+- `Shubhamsaboo/awesome-llm-apps` [appendix] - 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.; docs, gha.
+- `github/spec-kit` [baseline] - 💫 Toolkit to help you get started with Spec-Driven Development; pyproject, src, tests, docs, gha, pytest, backend=hatchling.build.
+- `deepseek-ai/DeepSeek-V3` [baseline] - gha.
+- `openai/whisper` [baseline] - Robust Speech Recognition via Large-Scale Weak Supervision; pyproject, requirements, tests, gha, pre-commit, backend=setuptools.build_meta.
+- `pytorch/pytorch` [baseline] - Tensors and Dynamic neural networks in Python with strong GPU acceleration; pyproject, setup.py, requirements, docs, gha, ruff, backend=setuptools.build_meta.
+- `fastapi/fastapi` [baseline] - FastAPI framework, high performance, easy to learn, fast to code, ready for production; pyproject, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=pdm.backend.
+- `nvbn/thefuck` [baseline] - Magnificent app which corrects your previous console command.; setup.cfg, setup.py, requirements, tests, gha, tox.
+- `browser-use/browser-use` [baseline] - 🌐 Make websites accessible for AI agents. Automate tasks online with ease.; pyproject, tests, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `hacksider/Deep-Live-Cam` [baseline] - real time face swap and one-click video deepfake with only a single image; pyproject, requirements, tests, gha, ruff.
+- `django/django` [baseline] - The Web framework for perfectionists with deadlines.; pyproject, tests, docs, gha, pre-commit, tox, backend=setuptools.build_meta.
+- `home-assistant/core` [baseline] - :house_with_garden: Open source home automation that puts local control and privacy first.; pyproject, tests, gha, pre-commit, ruff, pytest, backend=setuptools.build_meta.
+- `3b1b/manim` [baseline] - Animation engine for explanatory math videos; pyproject, setup.cfg, setup.py, requirements, docs, gha.
+- `nextlevelbuilder/ui-ux-pro-max-skill` [appendix] - An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms; src, docs, gha.
+- `karpathy/autoresearch` [baseline] - AI agents running research on single-GPU nanochat training automatically; pyproject.
+- `sherlock-project/sherlock` [baseline] - Hunt down social media accounts by username across social networks; pyproject, tests, docs, gha, tox, backend=poetry.core.masonry.api.
+- `bregman-arie/devops-exercises` [appendix] - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtuali...; tests, gha.
+- `TauricResearch/TradingAgents` [baseline] - TradingAgents: Multi-Agents LLM Financial Trading Framework; pyproject, requirements, tests, pytest, backend=setuptools.build_meta.
+- `infiniflow/ragflow` [baseline] - RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context...; pyproject, docs, gha, pre-commit, ruff, pytest.
+- `vllm-project/vllm` [baseline] - A high-throughput and memory-efficient inference and serving engine for LLMs; pyproject, setup.py, requirements, tests, docs, gha, pre-commit, mkdocs, ruff, mypy, pytest, backend=setuptools.build_meta.
+- `fighting41love/funNLP` [appendix] - 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、...; no strong root-level packaging or quality markers.
+- `PaddlePaddle/PaddleOCR` [baseline] - Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Suppo...; pyproject, setup.py, requirements, tests, docs, gha, pre-commit, mkdocs, pytest, backend=setuptools.build_meta.
+- `d2l-ai/d2l-zh` [appendix] - 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。; setup.py, gha.
+- `swisskyrepo/PayloadsAllTheThings` [appendix] - A list of useful payloads and bypass for Web Application Security and Pentest/CTF; gha, mkdocs.
+- `tensorflow/models` [baseline] - Models and examples built with TensorFlow; docs, gha.
+- `harry0703/MoneyPrinterTurbo` [baseline] - 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.; pyproject, requirements, docs, backend=hatchling.build.
+- `Z4nzu/hackingtool` [baseline] - ALL IN ONE Hacking Tool For Hackers; requirements, gha.
+- `OpenHands/OpenHands` [baseline] - 🙌 OpenHands: AI-Driven Development; pyproject, tests, gha, ruff, backend=poetry.core.masonry.api.
+- `python/cpython` [baseline] - The Python programming language; gha, pre-commit.
+- `josephmisiti/awesome-machine-learning` [appendix] - A curated list of awesome Machine Learning frameworks, libraries and software.; no strong root-level packaging or quality markers.
+- `hiyouga/LlamaFactory` [baseline] - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024); pyproject, requirements, src, tests, docs, gha, pre-commit, ruff, backend=hatchling.build.
+- `pallets/flask` [baseline] - The Python micro framework for building web applications.; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=flit_core.buildapi.
+- `binary-husky/gpt_academic` [baseline] - 为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcod...; requirements, tests, docs, gha, pre-commit, mkdocs.
+- `bytedance/deer-flow` [baseline] - An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message...; docs, gha, pre-commit.
+- `ansible/ansible` [baseline] - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code de...; pyproject, requirements, backend=setuptools.build_meta.
+- `FoundationAgents/MetaGPT` [baseline] - 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming; setup.py, requirements, tests, docs, gha, pre-commit.
+- `OpenBB-finance/OpenBB` [baseline] - Financial data platform for analysts, quants and AI agents.; gha, pre-commit.
+- `unclecode/crawl4ai` [baseline] - 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN; pyproject, setup.cfg, setup.py, requirements, tests, docs, gha, mkdocs, backend=setuptools.build_meta.
+- `labmlai/annotated_deep_learning_paper_implementations` [baseline] - 🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side notes 📝; including transformers (original, xl, switch, feedback, vit, ...), optim...; setup.py, requirements, docs.
+- `xtekky/gpt4free` [baseline] - The official gpt4free repository | various collection of powerful language models | opus 4.6 gpt 5.3 kimi 2.5 deepseek v3.2 gemini 3; setup.py, requirements, docs, gha.
+- `scikit-learn/scikit-learn` [baseline] - scikit-learn: machine learning in Python; pyproject, gha, pre-commit, ruff, mypy, pytest, backend=mesonpy.
+- `opendatalab/MinerU` [baseline] - Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.; pyproject, tests, docs, gha, mkdocs, pytest, backend=setuptools.build_meta.
+- `unslothai/unsloth` [baseline] - Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, DeepSeek, gpt-oss locally.; pyproject, tests, gha, pre-commit, ruff, pytest, backend=setuptools.build_meta.
+- `shareAI-lab/learn-claude-code` [baseline] - Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1; requirements, tests, docs, gha.
+- `keras-team/keras` [baseline] - Deep Learning for humans; pyproject, requirements, gha, pre-commit, ruff, pytest, backend=setuptools.build_meta.
+- `openinterpreter/open-interpreter` [baseline] - A natural language interface for computers; pyproject, tests, docs, gha, pre-commit, backend=poetry.core.masonry.api.
+- `Asabeneh/30-Days-Of-Python` [appendix] - The 30 Days of Python programming challenge is a step-by-step guide to learn the Python programming language in 30 days. This challenge may take more than 10...; no strong root-level packaging or quality markers.
+- `666ghj/MiroFish` [baseline] - A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物; gha.
+- `pathwaycom/pathway` [baseline] - Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.; pyproject, setup.cfg, src, tests, docs, gha, mypy, backend=maturin.
+- `ComposioHQ/awesome-claude-skills` [appendix] - A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows; gha.
+- `scrapy/scrapy` [baseline] - Scrapy, a fast high-level web crawling & scraping framework for Python.; pyproject, tests, docs, gha, pre-commit, tox, ruff, mypy, pytest, backend=hatchling.build.
+- `commaai/openpilot` [baseline] - openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.; pyproject, docs, gha, ruff, pytest, backend=hatchling.build.
+- `docling-project/docling` [baseline] - Get your documents ready for gen AI; pyproject, tests, docs, gha, pre-commit, mkdocs, ruff, pytest, backend=hatchling.build.
+- `CorentinJ/Real-Time-Voice-Cloning` [baseline] - Clone a voice in 5 seconds to generate arbitrary speech in real-time; pyproject, tests, gha.
+- `virattt/ai-hedge-fund` [baseline] - An AI Hedge Fund Team; pyproject, src, tests, backend=poetry.core.masonry.api.
+- `meta-llama/llama` [baseline] - Inference code for Llama models; setup.py, requirements.
+- `karpathy/nanoGPT` [baseline] - The simplest, fastest repository for training/finetuning medium-sized GPTs.; no strong root-level packaging or quality markers.
+- `sansan0/TrendRadar` [baseline] - ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI...; pyproject, requirements, docs, gha, backend=hatchling.build.
+- `D4Vinci/Scrapling` [baseline] - 🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!; pyproject, setup.cfg, tests, docs, gha, pre-commit, tox, mypy, backend=setuptools.build_meta.
+- `microsoft/autogen` [baseline] - A programming framework for agentic AI; docs, gha.
+- `RVC-Boss/GPT-SoVITS` [baseline] - 1 min voice data can also be used to train a good TTS model! (few shot voice cloning); requirements, docs, gha, pre-commit.
+- `safishamsi/graphify` [baseline] - AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs,...; pyproject, tests, docs, gha, ruff, pytest, backend=setuptools.build_meta.
+- `ultralytics/ultralytics` [baseline] - Ultralytics YOLO 🚀; pyproject, tests, docs, gha, mkdocs, ruff, pytest, backend=setuptools.build_meta.
+- `ultralytics/yolov5` [baseline] - YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite; pyproject, requirements, tests, gha, ruff, pytest, backend=setuptools.build_meta.
+- `mem0ai/mem0` [baseline] - Universal memory layer for AI Agents; pyproject, tests, docs, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `zylon-ai/private-gpt` [baseline] - Interact with your documents using the power of GPT, 100% privately, no data leaks; pyproject, tests, gha, pre-commit, ruff, mypy, pytest, backend=poetry.core.masonry.api.
+- `soimort/you-get` [baseline] - :arrow_double_down: Dumb downloader that scrapes the web; setup.cfg, setup.py, requirements, src, tests, gha.
+- `Textualize/rich` [baseline] - Rich is a Python library for rich text and beautiful formatting in the terminal.; pyproject, setup.py, tests, docs, gha, pre-commit, tox, mypy, pytest, backend=poetry.core.masonry.api.
+- `ageitgey/face_recognition` [baseline] - The world's simplest facial recognition api for Python and the command line; pyproject, setup.cfg, setup.py, requirements, tests, docs, gha, tox.
+- `FoundationAgents/OpenManus` [baseline] - No fortress, purely open ground.  OpenManus is Coming.; setup.py, requirements, tests, gha, pre-commit.
+- `datawhalechina/hello-agents` [appendix] - 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程; docs.
+- `deepfakes/faceswap` [baseline] - Deepfakes Software For All; pyproject, setup.py, requirements, tests, docs, gha, mypy, pytest.
+- `Zie619/n8n-workflows` [baseline] - all of the workflows of n8n i could find (also from the site itself); requirements, src, docs, gha.
+- `karpathy/nanochat` [baseline] - The best ChatGPT that $100 can buy.; pyproject, tests, pytest.
+- `psf/requests` [baseline] - A simple, yet elegant, HTTP library.; pyproject, setup.py, src, tests, docs, gha, pre-commit, tox, ruff, pytest, backend=setuptools.build_meta.
+- `MemPalace/mempalace` [baseline] - The best-benchmarked open-source AI memory system. And it's free.; pyproject, tests, docs, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `crewAIInc/crewAI` [baseline] - Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly,...; pyproject, docs, gha, pre-commit, ruff, mypy, pytest.
+- `odoo/odoo` [baseline] - Odoo. Open Source Apps To Grow Your Business.; setup.cfg, setup.py, requirements.
+- `xai-org/grok-1` [baseline] - Grok open release; pyproject, requirements, ruff.
+- `freqtrade/freqtrade` [baseline] - Free, open source crypto trading bot; pyproject, requirements, tests, docs, gha, pre-commit, mkdocs, ruff, mypy, pytest, backend=setuptools.build_meta.
+- `charlax/professional-programming` [appendix] - A collection of learning resources for curious software engineers; pre-commit.
+- `jingyaogong/minimind` [baseline] - 🧠「大模型」2小时完全从0训练64M的小参数LLM！Train a 64M-parameter LLM from scratch in just 2h!; requirements.
+- `NanmiCoder/MediaCrawler` [baseline] - 小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫; pyproject, requirements, tests, docs, gha, pre-commit.
+- `run-llama/llama_index` [baseline] - LlamaIndex is the leading document agent and OCR platform; pyproject, docs, gha, pre-commit, ruff, mypy, backend=hatchling.build.
+- `lllyasviel/Fooocus` [baseline] - Focus on prompting and generating; tests, gha.
+- `BerriAI/litellm` [baseline] - Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock...; pyproject, tests, docs, gha, mypy, pytest, backend=uv_build.
+- `pandas-dev/pandas` [baseline] - Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functio...; pyproject, gha, pre-commit, ruff, mypy, pytest, backend=mesonpy.
+- `astral-sh/ruff` [baseline] - An extremely fast Python linter and code formatter, written in Rust.; pyproject, docs, gha, pre-commit, mkdocs, ruff, backend=maturin.
+- `minimaxir/big-list-of-naughty-strings` [appendix] - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.; no strong root-level packaging or quality markers.
+- `microsoft/VibeVoice` [baseline] - Open-Source Frontier Voice AI; pyproject, docs, backend=setuptools.build_meta.
+- `oobabooga/textgen` [baseline] - Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.; setup.cfg, requirements, docs, gha.
+- `Aider-AI/aider` [baseline] - aider is AI pair programming in your terminal; pyproject, requirements, tests, gha, pre-commit, backend=setuptools.build_meta.
+- `apache/airflow` [baseline] - Apache Airflow - A platform to programmatically author, schedule, and monitor workflows; pyproject, docs, gha, pre-commit, ruff, mypy, pytest, backend=hatchling.build.
+- `streamlit/streamlit` [baseline] - Streamlit — A faster way to build and share data apps.; pyproject, gha, pre-commit, ruff, mypy.
+- `psf/black` [baseline] - The uncompromising Python code formatter; pyproject, src, tests, docs, gha, pre-commit, tox, mypy, pytest, backend=hatchling.build.
+- `pola-rs/polars` [baseline] - Extremely fast Query Engine for DataFrames, written in Rust; docs, gha, mkdocs.
+- `Textualize/textual` [baseline] - The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser.; pyproject, src, tests, docs, gha, pre-commit, ruff, pytest, backend=poetry.core.masonry.api.
+- `python-poetry/poetry` [baseline] - Python packaging and dependency management made easy; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=poetry.core.masonry.api.
+- `explosion/spaCy` [baseline] - 💫 Industrial-strength Natural Language Processing (NLP) in Python; pyproject, setup.cfg, setup.py, gha, pre-commit, ruff, backend=setuptools.build_meta.
+- `numpy/numpy` [baseline] - The fundamental package for scientific computing with Python.; pyproject, gha, backend=mesonpy.
+- `celery/celery` [baseline] - Distributed Task Queue (development branch); pyproject, setup.cfg, setup.py, docs, gha, pre-commit, tox, mypy, pytest.
+- `pydantic/pydantic` [baseline] - Data validation using Python type hints; pyproject, tests, docs, gha, pre-commit, mkdocs, ruff, pytest, backend=hatchling.build.
+- `locustio/locust` [baseline] - Write scalable load tests in plain Python 🚗💨; pyproject, docs, gha, pre-commit, ruff, mypy, pytest, backend=hatchling.build.
+- `plotly/dash` [baseline] - Data Apps & Dashboards for Python. No JavaScript Required.; setup.py, tests, gha.
+- `matplotlib/matplotlib` [baseline] - matplotlib: plotting with Python; pyproject, src, gha, pre-commit, tox, ruff, mypy, pytest, backend=mesonpy.
+- `prefecthq/prefect` [baseline] - Prefect is a workflow orchestration framework for building resilient data pipelines in Python.; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=hatchling.build.
+- `python/mypy` [baseline] - Optional static typing for Python; pyproject, setup.py, docs, gha, pre-commit, tox, ruff, pytest, backend=setuptools.build_meta.
+- `bokeh/bokeh` [baseline] - Interactive Data Visualization in the browser, from  Python; pyproject, setup.py, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=setuptools.build_meta.
+- `pallets/click` [baseline] - Python composable command line interface toolkit; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=flit_core.buildapi.
+- `aio-libs/aiohttp` [baseline] - Asynchronous HTTP client/server framework for asyncio and Python; pyproject, setup.cfg, setup.py, tests, docs, gha, pre-commit, backend=setuptools.build_meta.
+- `pre-commit/pre-commit` [baseline] - A framework for managing and maintaining multi-language pre-commit hooks.; setup.cfg, setup.py, tests, gha, pre-commit, tox.
+- `encode/httpx` [baseline] - A next generation HTTP client for Python. 🦋; pyproject, tests, docs, gha, mkdocs, ruff, mypy, pytest, backend=hatchling.build.
+- `sympy/sympy` [baseline] - A computer algebra system written in pure Python; pyproject, setup.py, gha, ruff, mypy, pytest.
+- `pytest-dev/pytest` [baseline] - The pytest framework makes it easy to write small tests, yet scales to support complex functional testing; pyproject, src, tests, gha, pre-commit, tox, ruff, mypy, pytest, backend=setuptools.build_meta.
+- `getpelican/pelican` [baseline] - Static site generator that supports Markdown and reST syntax. Powered by Python.; pyproject, docs, gha, pre-commit, tox, ruff, backend=pdm.backend.
+- `pyinstaller/pyinstaller` [baseline] - Freeze (package) Python programs into stand-alone executables; pyproject, tests, gha, backend=hatchling.build.
+- `dbt-labs/dbt-core` [baseline] - dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.; pyproject, docs, gha.
+- `encode/starlette` [baseline] - The little ASGI framework that shines. 🌟; pyproject, tests, docs, gha, mkdocs, ruff, mypy, pytest, backend=hatchling.build.
+- `sqlalchemy/sqlalchemy` [baseline] - The Database Toolkit for Python; pyproject, setup.cfg, setup.py, gha, pre-commit, tox, nox, mypy, pytest, backend=setuptools.build_meta.
+- `pallets/jinja` [baseline] - A very fast and expressive template engine.; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=flit_core.buildapi.
+- `kedro-org/kedro` [baseline] - Kedro is a toolbox for production-ready data science. It uses software engineering best practices to help you create data engineering and data science pipeli...; pyproject, tests, docs, gha, pre-commit, mkdocs, ruff, mypy, pytest, backend=setuptools.build_meta.
+- `encode/uvicorn` [baseline] - An ASGI web server, for Python. 🦄; pyproject, tests, docs, gha, mkdocs, ruff, mypy, pytest, backend=hatchling.build.
+- `rq/rq` [baseline] - Simple job queues for Python; pyproject, tests, docs, gha, pre-commit, tox, ruff, mypy, pytest, backend=hatchling.build.
+- `pdm-project/pdm` [baseline] - A modern Python package and dependency manager supporting the latest PEP standards; pyproject, src, tests, docs, gha, pre-commit, tox, mkdocs, ruff, mypy, pytest, backend=pdm.backend.
+- `PyCQA/bandit` [baseline] - Bandit is a tool designed to find common security issues in Python code.; setup.cfg, setup.py, tests, gha, pre-commit, tox.
+- `jazzband/pip-tools` [baseline] - A set of tools to keep your pinned Python dependencies fresh.; pyproject, tests, docs, gha, pre-commit, tox, mypy, pytest, backend=setuptools.build_meta.
+- `pyca/cryptography` [baseline] - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.; pyproject, src, tests, docs, gha, nox, ruff, mypy, pytest, backend=maturin.
+- `ofek/hatch` [baseline] - Modern, extensible Python project management; pyproject, src, tests, docs, gha, mkdocs, mypy, backend=hatchling.build.
+- `PyCQA/isort` [baseline] - A Python utility / library to sort imports.; pyproject, tests, docs, gha, pre-commit, tox, ruff, mypy, pytest, backend=hatchling.build.
+- `pallets/werkzeug` [baseline] - The comprehensive WSGI web application library.; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=flit_core.buildapi.
+- `python-attrs/attrs` [baseline] - Python Classes Without Boilerplate; pyproject, src, tests, docs, gha, pre-commit, tox, ruff, mypy, pytest, backend=hatchling.build.
+- `pypa/sampleproject` [baseline] - A sample project that exists for PyPUG's "Tutorial on Packaging and Distributing Projects"; pyproject, src, tests, gha, nox, backend=setuptools.build_meta.
+- `urllib3/urllib3` [baseline] - urllib3 is a user-friendly HTTP client library for Python; pyproject, setup.cfg, src, docs, gha, pre-commit, nox, mypy, pytest, backend=hatchling.build.
+- `tox-dev/tox` [baseline] - Command line driven CI frontend and development task automation tool.; pyproject, src, tests, docs, gha, pre-commit, ruff, pytest, backend=hatchling.build.
+- `beeware/briefcase` [baseline] - Tools to support converting a Python project into a standalone native application.; pyproject, src, tests, docs, gha, pre-commit, tox, ruff, pytest, backend=setuptools.build_meta.
+- `pallets/itsdangerous` [baseline] - Safely pass trusted data to untrusted environments and back.; pyproject, src, tests, docs, gha, pre-commit, ruff, mypy, pytest, backend=flit_core.buildapi.
+- `pytest-dev/pluggy` [baseline] - A minimalist production ready plugin system; pyproject, src, tests, docs, gha, pre-commit, tox, ruff, mypy, backend=setuptools.build_meta.
+- `wntrblm/nox` [baseline] - Flexible test automation for Python; pyproject, tests, docs, gha, pre-commit, nox, ruff, mypy, pytest, backend=hatchling.build.

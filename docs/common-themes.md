@@ -1,11 +1,29 @@
-# Common Themes From A 57-Repository Survey
+# Python Repository Standard
 
 Date reviewed: 2026-06-02
 
-## Survey size
+## Scope
 
-- repositories scanned: `57`
-- GitHub Actions workflows present: `57`
+- unique repositories reviewed: `156`
+- structural baseline: `138`
+- appendix-only references: `18`
+- duplicate aliases removed: `1`
+
+The structural baseline excludes tutorial collections, reading lists, challenge repositories, and prompt or skill directories. Those repositories are still catalogued in the atlas, but they do not drive the standard.
+
+## Headline counts
+
+- `105/138` use `pyproject.toml`
+- `125/138` expose GitHub Actions workflows
+- `77/138` use `pre-commit`
+- `81/138` expose `tests/` or `testing/`
+- `88/138` expose a root `docs/` directory
+- `68/138` configure Ruff
+- `46/138` configure mypy
+- `68/138` configure pytest in `pyproject.toml`
+- `31/138` use `src/` layout
+- `32/138` use `setuptools.build_meta`
+- `30/138` use `hatchling.build`
 
 ## Findings
 
@@ -13,25 +31,25 @@ Date reviewed: 2026-06-02
 
 Confidence: high
 
-`53/57` repositories use `pyproject.toml`. `42/57` use it without a root `setup.py` or `setup.cfg`. The control-plane shift is already real. The holdouts are older or compatibility-heavy projects.
+`pyproject.toml` has already won the control-plane fight. `105/138` baseline repositories use it, and most new or actively modernized projects place project metadata, test settings, lint settings, and build backend selection there. The remaining holdouts cluster around older compatibility-heavy projects or repos with unusually thin root packaging surfaces.
 
 ### 2. `src/` layout is the default for distributable packages
 
 Confidence: moderate
 
-`23/57` repositories use `src/` layout. That is enough to treat it as a strong default for new distributable packages, but not enough to pretend it is universal. Large and older projects still ship flat or custom layouts.
+`31/138` repositories use `src/` layout. That is not a majority. It is still the strongest default for a new distributable package because it reduces accidental import leakage and keeps package boundaries explicit. The benchmark does not support forcing it onto every existing codebase or every application repo.
 
-### 3. CI is assumed, not optional
+### 3. Repository checks are expected
 
 Confidence: high
 
-`57/57` repositories expose GitHub Actions workflows. CI is table stakes.
+`125/138` repositories expose GitHub Actions workflows. The missing `13` are not evidence against automation. They are usually older repositories, repos driven by another CI system, or projects with non-standard root layouts. Public Python repos at this level are expected to machine-check themselves.
 
 ### 4. Quality gates are automated
 
 Confidence: high
 
-The survey disagrees on exact tool brands. It agrees on the categories:
+The benchmark disagrees on exact tool brands. It agrees on the categories:
 
 - formatting
 - linting
@@ -42,64 +60,94 @@ The survey disagrees on exact tool brands. It agrees on the categories:
 
 Observed counts:
 
-- `44/57` use `pre-commit`
-- `40/57` expose Ruff configuration
-- `36/57` expose mypy configuration
-- `41/57` expose pytest configuration in `pyproject.toml`
-- `20/57` still expose `tox.ini`
-- `5/57` expose `noxfile.py`
+- `77/138` use `pre-commit`
+- `68/138` expose Ruff configuration
+- `46/138` expose mypy configuration
+- `68/138` expose pytest configuration in `pyproject.toml`
+- `25/138` still expose `tox.ini`
+- `5/138` expose `noxfile.py`
 
 Inference:
-Modern repositories are consolidating more quality work into fewer tools. Ruff is the clearest example. Tox remains common. Nox is visible but rare.
+Modern Python repos are collapsing more quality work into fewer tools. Ruff is the clearest example. Tox remains common in mature multi-environment projects. Nox appears, but it is not the dominant task runner in this benchmark.
 
 ### 5. Docs live in the repo
 
 Confidence: high
 
-`42/57` repositories expose a root `docs/` directory. Repos without one often still document heavily in the README or use non-root documentation layouts. Documentation remains a normal maintenance surface, not an optional afterthought.
+`88/138` repositories expose a root `docs/` directory. That does not mean every repo needs a docs site on day one. It does mean that serious Python repositories usually grow a documentation surface separate from the README.
 
-### 6. Release hygiene is increasingly automated
-
-Confidence: moderate
-
-The survey shows a steady move toward automated release and maintenance hooks, but not one standard implementation. The dominant pattern is not a specific release workflow. The dominant pattern is that release, dependency, and compatibility work is pushed into CI.
-
-### 7. Build backend choice is fragmented
+### 6. Build backend choice is fragmented
 
 Confidence: high
 
-Backend counts from the survey:
+Backend counts from the structural baseline:
 
-- `17` use `hatchling.build`
-- `14` use `setuptools.build_meta`
+- `32` use `setuptools.build_meta`
+- `30` use `hatchling.build`
+- `8` use `poetry.core.masonry.api`
 - `5` use `flit_core.buildapi`
 - `4` use `mesonpy`
 - `3` use `pdm.backend`
-- `3` use `poetry.core.masonry.api`
-- `2` use `maturin`
-- `9` do not expose a parseable backend at the repo root
+- `3` use `maturin`
+- `52` do not expose a parseable backend at the repo root
 
 Implication:
-There is no single winning backend across serious Python repos. Treat backend choice as a design tradeoff, not doctrine.
+There is no universal backend. Setuptools is still heavily present. Hatchling is the strongest modern pure-Python contender. Meson and maturin matter in compiled or mixed-language codebases. Backend choice is a design decision with maintenance consequences.
 
-## What I did not claim
+### 7. The standard varies by repo class
 
-- I did not claim one build backend has won outright.
-- I did not claim `src/` layout is universal.
-- I did not claim every repo needs docs hosting.
-- I did not claim every script repo should be reshaped into a package.
+Confidence: high
 
-## Practical baseline
+The benchmark breaks into four practical classes:
 
-For a new pure-Python repo, the defensible baseline is:
+1. Distributable packages and libraries
+   These are the cleanest fit for `pyproject.toml`, `src/`, `tests/`, GitHub Actions, Ruff, pytest, and often mypy.
+2. Applications and services
+   These often keep `pyproject.toml` and CI, but they are less consistent about `src/` and sometimes flatter at the root.
+3. Large research or ML projects
+   These often carry `requirements.txt`, mixed build surfaces, and less uniform packaging discipline while still maintaining tests and workflows.
+4. Mixed-language or compiled projects
+   These show up in the `mesonpy`, `maturin`, and compatibility-heavy `setuptools` cases. Their structure follows build constraints more than pure Python fashion.
+
+### 8. The benchmark does not reward template maximalism
+
+Confidence: high
+
+The best repositories are not the ones with the most files. They are the ones where the repo shape matches the problem:
+
+- one metadata hub instead of split legacy config unless compatibility requires it
+- one or two quality entry points instead of five overlapping linters
+- tests and docs that are obvious at the root
+- CI that exercises the real path to release or deployment
+- no speculative ceremony
+
+## Recommended default
+
+For a new pure-Python package, the strongest default remains:
 
 1. `pyproject.toml`
 2. `src/` layout
 3. `tests/`
-4. GitHub Actions CI
-5. Ruff
-6. mypy
+4. `.github/workflows/ci.yml`
+5. `pre-commit`
+6. Ruff
 7. pytest
-8. `README.md`
+8. mypy when the public surface is typed or expected to stay typed
+9. `README.md`
+10. `docs/` once the project has more than trivial usage or API surface
 
-That baseline is smaller than the heaviest templates, but it matches the overlap that holds up across the survey.
+## Decision rules
+
+- Do not force `src/` layout onto an operational one-file script.
+- Do not keep `setup.py`, `setup.cfg`, and `pyproject.toml` together unless backward compatibility requires all three.
+- Do not add `tox`, `nox`, and ad hoc shell scripts for the same jobs without a concrete reason.
+- Do not treat the heaviest template as the default starting point.
+- Do not remove tests or docs from the root path in the name of visual neatness.
+
+## What this standard does not claim
+
+- It does not claim `src/` layout is a majority pattern.
+- It does not claim GitHub Actions is the only valid CI.
+- It does not claim mypy belongs in every repository.
+- It does not claim one build backend has settled the market.
+- It does not claim tutorial or resource repositories should be treated as structural peers of maintainable software codebases.

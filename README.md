@@ -1,37 +1,38 @@
 # Python Best Practices Playbook
 
-`Python Best Practices Playbook` is a maintained starter repository and LLM skill for building and reviewing modern Python repositories.
+`Python Best Practices Playbook` defines a practical Python repository standard and ships a matching LLM skill for repo review and scaffolding.
 
 Brand: `tg12`
 Site: <https://labs.jamessawyer.co.uk/>
 
-This repository now carries a 57-repository survey across Python frameworks, libraries, tooling, data platforms, scientific stacks, and application projects. The guide and skill reflect the overlap that survives across that wider corpus.
+The current benchmark covers `156` unique public repositories. `138` code-bearing repositories drive the structural baseline. `18` tutorial, resource, and collection repositories are catalogued separately so they do not distort the recommendations.
 
 ## What this repo gives you
 
 - A minimal Python package with `src/` layout
 - `pyproject.toml` as the single project metadata and tool config hub
 - GitHub Actions CI for lint, type checks, and tests
-- A documented baseline derived from a 57-repository survey
+- A documented Python repository standard derived from a 156-repository benchmark
 - A Codex-compatible skill that can audit or scaffold Python repos using those patterns
 - A rewritten response-style prompt with obvious AI filler removed
 
-## Aggregate findings
+## Benchmark summary
 
-Across the current survey:
+Across the `138`-repository structural baseline:
 
-- `53/57` use `pyproject.toml`
-- `57/57` expose GitHub Actions workflows
-- `44/57` use `pre-commit`
-- `42/57` are `pyproject`-only at the repo root, without `setup.py` or `setup.cfg`
-- `40/57` expose a dedicated `tests/` or `testing/` directory
-- `42/57` have a root `docs/` directory
-- `40/57` configure Ruff
-- `36/57` configure mypy
-- `41/57` configure pytest in `pyproject.toml`
-- `23/57` use `src/` layout
+- `105/138` use `pyproject.toml`
+- `125/138` expose GitHub Actions workflows
+- `77/138` use `pre-commit`
+- `81/138` expose a dedicated `tests/` or `testing/` directory
+- `88/138` expose a root `docs/` directory
+- `68/138` configure Ruff
+- `46/138` configure mypy
+- `68/138` configure pytest in `pyproject.toml`
+- `31/138` use `src/` layout
+- `30/138` use `hatchling.build`
+- `32/138` still expose `setuptools.build_meta`
 
-The stable pattern is not one fixed template. The stable pattern is centralized metadata, machine-enforced checks, and explicit maintenance surfaces.
+The standard pattern is centralized metadata, automated checks, explicit test surfaces, and repository-level documentation. The benchmark does not support the claim that one build backend or one layout has completely won.
 
 ## Repository layout
 
@@ -48,13 +49,13 @@ The stable pattern is not one fixed template. The stable pattern is centralized 
 
 ## Skill
 
-The skill lives in [skills/python-best-practices-reviewer/SKILL.md](skills/python-best-practices-reviewer/SKILL.md). It is designed for Codex-style skill loading and tells the model when to inspect repo structure, when to prefer small changes, and when to enforce the common Python repo patterns that hold up across the survey.
+The skill lives in [skills/python-best-practices-reviewer/SKILL.md](skills/python-best-practices-reviewer/SKILL.md). It is designed for Codex-style skill loading and tells the model when to inspect repo structure, when to prefer small changes, and when to enforce the benchmark-backed patterns that hold up across the atlas.
 
 ## Research notes
 
 - [docs/common-themes.md](docs/common-themes.md)
 - [docs/repo-blueprint.md](docs/repo-blueprint.md)
-- [research/repo-survey.md](research/repo-survey.md)
+- [research/repo-atlas.md](research/repo-atlas.md)
 
 ## Quick start
 

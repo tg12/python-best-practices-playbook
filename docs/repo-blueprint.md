@@ -19,7 +19,7 @@ project-root/
 ## Why this blueprint
 
 - Small enough to understand in one sitting
-- Matches the dominant overlap in the 57-repository survey
+- Matches the dominant overlap in the 156-repository benchmark
 - Preserves the control-plane pattern now common in modern Python repos
 - Leaves room for heavier release, docs, and security layers when the project earns them
 
